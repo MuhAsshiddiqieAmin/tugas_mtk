@@ -7,7 +7,7 @@ export default function Home() {
       <p className="text-lg mb-6">Kelompok Roblox</p>
       <p className="text-md mb-6 text-center">
         Muh. Asshiddiqie Amin, Muh Jibran Ghaly, Muhammad Syahrul Ramadhan, Muhammad Rifatul Anam,<br/>
-        Kaysan Fatih Harimuswarah, Sakha Ibadil Kiram, Raihana Jinan Ulya, Nurul Karimah
+        Kaysan Fatih Harimuswarah, Sakha Ibadil Kiram, Raihana Jinan Ulya, Nurul Karimah muhammad, rifqi assyauqi iqbal
       </p>
       
       <div className="flex space-x-4">
