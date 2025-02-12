@@ -2,52 +2,45 @@
 import { useState } from 'react';
 import Link from 'next/link';
 
-export default function LimasSegitigaCalculator() {
-  const [alasLuas, setAlasLuas] = useState('');
-  const [tinggiLuas, setTinggiLuas] = useState('');
+export default function LimasSegiempatCalculator() {
+  const [sisiLuas, setSisiLuas] = useState('');
   const [tinggiSelimut, setTinggiSelimut] = useState('');
-  const [alasVolume, setAlasVolume] = useState('');
+  const [panjangVolume, setPanjangVolume] = useState('');
+  const [lebarVolume, setLebarVolume] = useState('');
   const [tinggiVolume, setTinggiVolume] = useState('');
   const [luas, setLuas] = useState(null);
   const [volume, setVolume] = useState(null);
 
   const hitungLuas = () => {
-    const a = parseFloat(alasLuas);
-    const t = parseFloat(tinggiLuas);
+    const s = parseFloat(sisiLuas);
     const ts = parseFloat(tinggiSelimut);
-    if (!isNaN(a) && !isNaN(t) && !isNaN(ts)) {
-      setLuas((a * t) + (3 * (0.5 * a * ts)));
+    if (!isNaN(s) && !isNaN(ts)) {
+      setLuas((s * s) + (4 * (0.5 * s * ts)));
     }
   };
 
   const hitungVolume = () => {
-    const a = parseFloat(alasVolume);
+    const p = parseFloat(panjangVolume);
+    const l = parseFloat(lebarVolume);
     const t = parseFloat(tinggiVolume);
-    if (!isNaN(a) && !isNaN(t)) {
-      setVolume((1 / 3) * (0.5 * a * t) * t);
+    if (!isNaN(p) && !isNaN(l) && !isNaN(t)) {
+      setVolume((1 / 3) * (p * l * t));
     }
   };
 
   return (
     <div className="flex flex-col items-center justify-center min-h-screen bg-gray-900 text-white p-6">
-      <h1 className="text-3xl font-bold mb-4">Kalkulator Limas Segitiga</h1>
+      <h1 className="text-3xl font-bold mb-4">Kalkulator Limas Segiempat</h1>
       <div className="flex space-x-8">
         <div className="bg-gray-800 p-6 rounded-xl w-80 text-center">
           <h2 className="text-xl font-semibold mb-4">Luas Permukaan</h2>
-          <label className="block mb-2">Masukkan Alas, Tinggi, dan Tinggi Selimut:</label>
+          <label className="block mb-2">Masukkan Sisi dan Tinggi Selimut:</label>
           <input
             type="number"
             className="p-2 rounded bg-gray-700 text-white mb-2 w-full"
-            placeholder="Alas"
-            value={alasLuas}
-            onChange={(e) => setAlasLuas(e.target.value)}
-          />
-          <input
-            type="number"
-            className="p-2 rounded bg-gray-700 text-white mb-2 w-full"
-            placeholder="Tinggi"
-            value={tinggiLuas}
-            onChange={(e) => setTinggiLuas(e.target.value)}
+            placeholder="Sisi"
+            value={sisiLuas}
+            onChange={(e) => setSisiLuas(e.target.value)}
           />
           <input
             type="number"
@@ -61,13 +54,20 @@ export default function LimasSegitigaCalculator() {
         </div>
         <div className="bg-gray-800 p-6 rounded-xl w-80 text-center">
           <h2 className="text-xl font-semibold mb-4">Volume</h2>
-          <label className="block mb-2">Masukkan Alas dan Tinggi:</label>
+          <label className="block mb-2">Masukkan Panjang, Lebar, dan Tinggi:</label>
           <input
             type="number"
             className="p-2 rounded bg-gray-700 text-white mb-2 w-full"
-            placeholder="Alas"
-            value={alasVolume}
-            onChange={(e) => setAlasVolume(e.target.value)}
+            placeholder="Panjang"
+            value={panjangVolume}
+            onChange={(e) => setPanjangVolume(e.target.value)}
+          />
+          <input
+            type="number"
+            className="p-2 rounded bg-gray-700 text-white mb-2 w-full"
+            placeholder="Lebar"
+            value={lebarVolume}
+            onChange={(e) => setLebarVolume(e.target.value)}
           />
           <input
             type="number"
