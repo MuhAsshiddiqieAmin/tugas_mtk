@@ -26,6 +26,7 @@ export default function KalkulatorPersegi() {
   return (
     <div className="flex flex-col items-center justify-center min-h-screen bg-gray-900 text-white p-6">
       <h1 className="text-3xl font-bold mb-4">Kalkulator Persegi</h1>
+      <h2>Raihana Jinan Ulya</h2>
       <div className="flex space-x-8">
         <div className="bg-gray-800 p-6 rounded-xl w-80">
           <h2 className="text-xl font-semibold mb-4">Luas</h2>

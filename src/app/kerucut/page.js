@@ -25,6 +25,7 @@ export default function KalkulatorKerucut() {
   return (
     <div className="flex flex-col items-center justify-center min-h-screen bg-gray-900 text-white p-6">
       <h1 className="text-3xl font-bold mb-4">Kalkulator Kerucut</h1>
+      <h2>Muhammad Rifqi Assyauqi Iqbal</h2>
       <div className="flex space-x-8">
         {/* Card untuk menghitung Volume */}
         <div className="bg-gray-800 p-6 rounded-xl w-80">
