@@ -73,7 +73,7 @@ export default function KalkulatorKerucut() {
           {hasilLuasPermukaan !== null && <p className="mt-4 text-lg">Hasil Luas Permukaan: {hasilLuasPermukaan.toFixed(2)}</p>}
         </div>
       </div>
-      <Link href="/bangunDatar" className="mt-6 text-blue-400 hover:underline">&#8592; Kembali ke Pilihan</Link>
+      <Link href="/bangunRuang" className="mt-6 text-blue-400 hover:underline">&#8592; Kembali ke Pilihan</Link>
     </div>
   );
 }
