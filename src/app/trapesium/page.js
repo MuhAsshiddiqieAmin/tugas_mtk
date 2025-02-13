@@ -6,7 +6,8 @@ export default function KalkulatorTrapesium() {
 
   const [atas1, setAtas1] = useState('');
   const [atas2, setAtas2] = useState('');
-  const [bawah, setBawah] = useState('');
+  const [bawah1, setBawah1] = useState('');
+  const [bawah2, setBawah2] = useState('');
   const [tinggi, setTinggi] = useState('');
   const [sisi1, setSisi1] = useState('');
   const [sisi2, setSisi2] = useState('');
@@ -14,12 +15,12 @@ export default function KalkulatorTrapesium() {
   const [hasilKeliling, setHasilKeliling] = useState(null);
 
   const hitungLuas = () => {
-    const luas = 0.5 * (parseFloat(atas) + parseFloat(bawah)) * parseFloat(tinggi);
+    const luas = 0.5 * (parseFloat(atas1) + parseFloat(bawah1)) * parseFloat(tinggi);
     setHasilLuas(luas);
   };
 
   const hitungKeliling = () => {
-    const keliling = parseFloat(atas) + parseFloat(bawah) + parseFloat(sisi1) + parseFloat(sisi2);
+    const keliling = parseFloat(atas2) + parseFloat(bawah2) + parseFloat(sisi1) + parseFloat(sisi2);
     setHasilKeliling(keliling);
   };
 
@@ -44,8 +45,8 @@ export default function KalkulatorTrapesium() {
             type="number"
             className="p-2 rounded bg-gray-700 text-white mb-2"
             placeholder="Sisi Bawah"
-            value={bawah}
-            onChange={(e) => setBawah(e.target.value)}
+            value={bawah1}
+            onChange={(e) => setBawah1(e.target.value)}
           />
           <label className="block mb-2">Masukkan Tinggi:</label>
           <input
@@ -75,8 +76,8 @@ export default function KalkulatorTrapesium() {
             type="number"
             className="p-2 rounded bg-gray-700 text-white mb-2"
             placeholder="Sisi Bawah"
-            value={bawah}
-            onChange={(e) => setBawah(e.target.value)}
+            value={bawah2}
+            onChange={(e) => setBawah2(e.target.value)}
           />
           <label className="block mb-2">Masukkan Sisi 1:</label>
           <input

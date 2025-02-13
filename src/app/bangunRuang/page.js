@@ -6,6 +6,7 @@ export default function BangunRuang() {
       <h1 className="text-3xl font-bold mb-4">Pilih Bangun Ruang</h1>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         <Card name="Kubus" href="kubus" formula="6R²" volume="R³" />
+        <Card name="Kubus(2)" href="kubus2" formula="6R²" volume="R³" />
         <Card name="Balok" href="balok" formula="2pl + 2pt + 2lt" volume="plt" />
         <Card name="Limas Segiempat" href="limas-segiempat" formula="L₁ + L₂ + L₃ + L₄ + L₅" volume="1/3 La T" />
         <Card name="Prisma Segitiga" href="prisma-segitiga" formula="(S₁ + S₂ + S₃) × T" volume="1/2 aT" />

@@ -10,6 +10,7 @@ export default function BangunDatar() {
         <Card name="Jajar Genjang" href="/jajar-genjang" keliling="a + b + c + d" luas="a × t" />
         <Card name="Segitiga" href="/segitiga" keliling="a + b + c" luas="½ × a × t" />
         <Card name="Belah Ketupat" href="/belah-ketupat" keliling="a + b + c + d" luas="½ × d1 × d2" />
+        <Card name="Belah Ketupat(2)" href="/belah-ketupat2" keliling="a + b + c + d" luas="½ × d1 × d2" />
         <Card name="Layang-Layang" href="/layang-layang" keliling="a + b + c + d" luas="½ × d1 × d2" />
         <Card name="Trapesium" href="/trapesium" keliling="a + b + c + d" luas="(a + b) / 2 × t" />
         <Card name="Lingkaran" href="/lingkaran" keliling="2 × π × r" luas="π × r²" />
